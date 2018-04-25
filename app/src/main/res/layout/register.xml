@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+    <EditText
+        android:id="@+id/d1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="ex:bahya@gmail.com"
+        android:background="#555555"
+        android:textColorHint="#f9afad"
+        android:layout_marginBottom="5dp"
+        />
+    <EditText
+        android:id="@+id/d2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#555555"
+        android:textColorHint="#f9afad"
+        android:hint="enter 6 digit password" />
+    <Button
+        android:id="@+id/reg"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="register"/>
+    <Button
+        android:id="@+id/k"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="back"/>
+</LinearLayout>
