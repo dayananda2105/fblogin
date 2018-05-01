@@ -8,7 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -16,7 +16,6 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
 
 public class Openpage extends AppCompatActivity {
     EditText text1;
@@ -36,10 +35,7 @@ public class Openpage extends AppCompatActivity {
             @Override
             public void onClick(View arg0) {
                try {
-                   String number = text1.getText().toString();
-                   Intent callIntent = new Intent(Intent.ACTION_CALL);
-                   callIntent.setData(Uri.parse("tel:" + number));
-                   startActivity(callIntent);
+                   Toast.makeText(getApplicationContext(), "this is logined page",Toast.LENGTH_SHORT).show();
                }
             catch(RuntimeException e){
                 Toast.makeText(getApplicationContext(), "get permission of camera ",Toast.LENGTH_SHORT).show();
@@ -55,3 +51,4 @@ public class Openpage extends AppCompatActivity {
         });
     }
 }
+
